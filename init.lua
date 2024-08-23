@@ -30,7 +30,6 @@ alien_material.S = minetest.get_translator("alien_material")
 dofile(minetest.get_modpath("alien_material") .. "/ores.lua")
 dofile(minetest.get_modpath("alien_material") .. "/tools.lua")
 dofile(minetest.get_modpath("alien_material") .. "/alien_apple.lua") -- Alien apples and Alien hearts
-dofile(minetest.get_modpath("alien_material") .. "/biomes.lua")
 dofile(minetest.get_modpath("alien_material") .. "/items.lua")
 dofile(minetest.get_modpath("alien_material") .. "/crafting.lua")
 if minetest.get_modpath("3d_armor") then

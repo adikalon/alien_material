@@ -228,35 +228,3 @@ minetest.register_craft({
   recipe = "alien_material:alien_ingot",
   burntime = 1024,
 })
-
-
--- Alienbench
-minetest.register_craft({
-	type = "shaped",
-	output = "alien_material:alienbench",
-	recipe = {
-		{"alien_material:alien_ingot",  "alien_material:alien_ingot",  "alien_material:alien_ingot",},
-		{"alien_material:alien_ingot",  "alien_material:alien_diamond_block",  "alien_material:alien_ingot",},
-		{"alien_material:alien_ingot",  "alien_material:alien_ingot",  "alien_material:alien_ingot",},
-	}
-})
-
--- Alienbricks
-minetest.register_craft({
-	type = "shaped",
-	output = "alien_material:alien_brick_1 4",
-	recipe = {
-		{"alien_material:alien_sand", "alien_material:alien_sand"},
-		{"alien_material:alien_sand", "alien_material:alien_sand"}
-	}
-})
-
-minetest.register_craft({
-	type = "shaped",
-	output = "alien_material:alien_brick_2 9",
-	recipe = {
-		{"alien_material:alien_sand", "alien_material:alien_sand", "alien_material:alien_sand"},
-		{"alien_material:alien_sand", "alien_material:alien_sand", "alien_material:alien_sand"},
-		{"alien_material:alien_sand", "alien_material:alien_sand", "alien_material:alien_sand"}
-	}
-})
