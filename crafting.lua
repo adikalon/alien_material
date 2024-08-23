@@ -226,5 +226,5 @@ minetest.register_craft({
 minetest.register_craft({
   type = "fuel",
   recipe = "alien_material:alien_ingot",
-  burntime = 1024,
+  burntime = 740,
 })
