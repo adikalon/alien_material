@@ -161,4 +161,5 @@ minetest.register_node("alien_material:alien_apple", {
 		minetest.do_item_eat(20, nil, itemstack, player, pointed_thing)
 	end,
 	sounds = default.node_sound_leaves_defaults(),
+	groups = {food = 20, eatable=20},
 })

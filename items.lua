@@ -27,6 +27,7 @@ minetest.register_craftitem("alien_material:alien_bread", {
 	inventory_image = "alien_bread.png",
 	description = S("Alien Bread"),
 	on_use = minetest.item_eat(20),
+	groups = {food = 20, eatable=20},
 })
 
 
