@@ -24,50 +24,56 @@ minetest.register_tool("alien_material:alien_pickaxe", {
 	description = "Alien Pickaxe",
 	inventory_image = "alien_pickaxe.png",
 	tool_capabilities = {
-		full_punch_interval = 1.5,
+		full_punch_interval = 0.9,
 		max_drop_level = 1,
 		groupcaps = {
 			cracky = {
-				maxlevel = 5,
-				uses = 65536,
+				maxlevel = 3,
+				uses = 10,
 				times = {[1]=1.00, [2]=0.50, [3]=0.20}
 			},
 		},
-		damage_groups = {cracky=2},
+		damage_groups = {fleshy=5},
 	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {pickaxe = 1},
 })
 
 minetest.register_tool("alien_material:alien_axe", {
 	description = "Alien Axe",
 	inventory_image = "alien_axe.png",
 	tool_capabilities = {
-		full_punch_interval = 1.5,
+		full_punch_interval = 0.9,
 		max_drop_level = 1,
 		groupcaps = {
 			choppy = {
-				maxlevel = 5,
-				uses = 65536,
+				maxlevel = 3,
+				uses = 10,
 				times = {[1]=1.00, [2]=0.50, [3]=0.20}
 			},
 		},
-		damage_groups = {choppy=2},
+		damage_groups = {fleshy=7},
 	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {axe = 1},
 })
 
 minetest.register_tool("alien_material:alien_spade", {
 	description = "Alien Spade",
 	inventory_image = "alien_spade.png",
 	tool_capabilities = {
-		full_punch_interval = 1.5,
+		full_punch_interval = 1.0,
 		max_drop_level = 1,
 		groupcaps = {
 			crumbly = {
-				maxlevel = 5,
-				uses = 65536,
+				maxlevel = 3,
+				uses = 10,
 				times = {[1]=1.00, [2]=0.50, [3]=0.20}
 			},
 		},
-		damage_groups = {crumbly=2},
+		damage_groups = {fleshy=4},
+		sound = {breaks = "default_tool_breaks"},
+		groups = {shovel = 1},
 	},
 })
 
@@ -79,51 +85,17 @@ minetest.register_tool("alien_material:alien_sword", {
 	description = "Alien Sword",
 	inventory_image = "alien_sword.png",
 	tool_capabilities = {
-		full_punch_interval = 0,3,
-		max_drop_level = 1,
-		groupcaps = {
-			fleshy = {
-				maxlevel = 5,
-				uses = 65536,
-				times = {[1]=1.00, [2]=0.50, [3]=0.20}
-			},
-		},
-		damage_groups = {fleshy=80},
-	},
-})
-
-
-
-
-
-minetest.register_tool("alien_material:alien_multitool", {
-	description = "Alien Multitool",
-	inventory_image = "alien_multitool.png",
-	tool_capabilities = {
 		full_punch_interval = 0.3,
 		max_drop_level = 1,
 		groupcaps = {
-			fleshy = {
-				maxlevel = 5,
-				uses = 65536,
-				times = {[1]=1.00, [2]=0.50, [3]=0.20}
-			},
-			crumbly = {
-				maxlevel = 5,
-				uses = 65536,
-				times = {[1]=1.00, [2]=0.50, [3]=0.20}
-			},
-			choppy = {
-				maxlevel = 5,
-				uses = 65536,
-				times = {[1]=1.00, [2]=0.50, [3]=0.20}
-			},
-			cracky = {
-				maxlevel = 5,
-				uses = 65536,
+			snappy = {
+				maxlevel = 3,
+				uses = 10,
 				times = {[1]=1.00, [2]=0.50, [3]=0.20}
 			},
 		},
-		damage_groups = {fleshy=80, crumbly=2, choppy=2, cracky=2},
+		damage_groups = {fleshy=30},
 	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {sword = 1},
 })

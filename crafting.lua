@@ -135,15 +135,6 @@ minetest.register_craft({
 	}
 })
 
-minetest.register_craft({
-	type = "shaped",
-	output = "alien_material:alien_multitool",
-	recipe = {
-		{"alien_material:alien_axe",  "alien_material:alien_pickaxe",  "alien_material:alien_spade"},
-		{"alien_material:alien_mese",  "alien_material:alien_sword",  "alien_material:alien_mese"}
-	}
-})
-
 -- Alien Material
 minetest.register_craft({
 	type = "shaped",
