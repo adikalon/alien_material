@@ -30,6 +30,13 @@ minetest.register_craftitem("alien_material:alien_bread", {
 	groups = {food = 20, eatable=20},
 })
 
+minetest.register_craftitem("alien_material:alien_apple", {
+	inventory_image = "alien_apple.png",
+	description = S("Alien apple"),
+	on_use = minetest.item_eat(20),
+	groups = {food = 20, eatable=20},
+})
+
 
 -- Alien Diamond
 minetest.register_node("alien_material:alien_diamond_block", {
