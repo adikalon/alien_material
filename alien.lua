@@ -22,6 +22,17 @@
 
 local S = alien_material.S
 
+local min_spawn = -31000
+local max_spawn = -4000
+
+if minetest.get_modpath("nether") then
+	min_spawn = nether.DEPTH_CEILING
+
+	if max_spawn < min_spawn then
+		max_spawn = min_spawn + 100
+	end
+end
+
 -- Alien by debiankaios
 -- Thanks for Mese Monster by Zeg9
 
@@ -34,8 +45,8 @@ mobs:register_mob("alien_material:alien", {
 	shoot_interval = 0.5,
 	arrow = "alien_material:alien_mese_arrow",
 	shoot_offset = 2,
-	hp_min = 1024,
-	hp_max = 4096,
+	hp_min = 3000,
+	hp_max = 4000,
 	armor = 200,
 	collisionbox = {-0.5, -1.5, -0.5, 0.5, 0.5, 0.5},
 	visual = "mesh",
@@ -57,9 +68,8 @@ mobs:register_mob("alien_material:alien", {
 	fall_speed = -6,
 	stepheight = 2.1,
 	drops = {
-		--{name = "alien_material:op_alien_apple", chance = 9, min = 1, max = 4},
-		{name = "alien_material:alien_apple", chance = 3, min = 1, max = 8},
-		{name = "alien_material:alien_mese", chance = 1, min = 1, max = 16},
+		{name = "alien_material:alien_apple", chance = 3, min = 10, max = 20},
+		{name = "alien_material:alien_mese", chance = 1, min = 30, max = 50},
 	},
 	water_damage = 1,
 	lava_damage = 1,
@@ -79,38 +89,17 @@ mobs:register_mob("alien_material:alien", {
 })
 
 if not mobs.custom_spawn_monster then
-mobs:spawn({
-	name = "alien_material:alien",
-	nodes = {"default:stone"},
-	max_light = 15,
-	chance = 5000,
-	active_object_count = 1,
-	max_height = -4096,
-})
-
-
-mobs:spawn({
-	name = "alien_material:alien",
-	nodes = {"alien_material:alien_block"},
-	day_toggle = false,
-	max_light = 15,
-	chance = 500,
-	active_object_count = 1,
-	max_height = 1000,
-	min_height = 150
-
-})
+	mobs:spawn({
+		name = "alien_material:alien",
+		nodes = {"default:stone"},
+		chance = 5000,
+		active_object_count = 1,
+		min_height = min_spawn,
+		max_height = max_spawn,
+	})
 end
 
-
-
-
-
 mobs:register_egg("alien_material:alien", S("Alien"), "alien_mese_block.png", 1)
-
-
-mobs:alias_mob("alien:alien", "alien_material:alien") -- compatiblity
-
 
 -- Alien mese arrow (weapon)
 mobs:register_arrow("alien_material:alien_mese_arrow", {
@@ -125,14 +114,14 @@ mobs:register_arrow("alien_material:alien_mese_arrow", {
 	hit_player = function(self, player)
 		player:punch(self.object, 1.0, {
 			full_punch_interval = 1.0,
-			damage_groups = {fleshy = 128},
+			damage_groups = {fleshy = 10},
 		}, nil)
 	end,
 
 	hit_mob = function(self, player)
 		player:punch(self.object, 1.0, {
 			full_punch_interval = 1.0,
-			damage_groups = {fleshy = 128},
+			damage_groups = {fleshy = 10},
 		}, nil)
 	end,
 
