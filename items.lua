@@ -51,7 +51,6 @@ minetest.register_node("alien_material:alien_diamond_ore", {
 	description = S("Alien Diamond Ore"),
 	is_ground_content = true,
 	legacy_mineral = true,
-	light_source = default.LIGHT_MAX/3,
 	sounds = default.node_sound_stone_defaults(),
 })
 
@@ -69,7 +68,6 @@ minetest.register_node("alien_material:alien_mese_ore", {
 	groups = {cracky = 1},
 	is_ground_content = true,
 	legacy_mineral = true,
-	light_source = 5,
 	drop = "alien_material:alien_mese",
 	sounds = default.node_sound_stone_defaults(),
 })
