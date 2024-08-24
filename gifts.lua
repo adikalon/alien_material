@@ -8,7 +8,7 @@ if minetest.get_modpath("mobs_npc") then
 	table.insert(mobs.human.items, {"alien_material:alien_apple", "default:gold_ingot 25", 10})
 
 	if minetest.get_modpath("x_bows") then
-		table.insert(mobs.human.items, {"alien_material:arrow_alien", "default:gold_ingot 80", 10})
+		table.insert(mobs.human.items, {"alien_material:arrow_alien", "default:gold_ingot 10", 10})
 	end
 
 	if minetest.get_modpath("3d_armor") then
