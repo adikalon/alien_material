@@ -91,7 +91,7 @@ mobs:register_mob("alien_material:alien", {
 if not mobs.custom_spawn_monster then
 	mobs:spawn({
 		name = "alien_material:alien",
-		nodes = {"default:stone"},
+		nodes = {"group:cracky", "group:crumbly"},
 		chance = 5000,
 		active_object_count = 1,
 		min_height = min_spawn,

@@ -104,7 +104,7 @@ minetest.register_craftitem("alien_material:alien_mese_fragment", {
 })
 
 
---Alien Ore
+-- Alien Ore
 minetest.register_craftitem("alien_material:alien_ingot", {
 	inventory_image = "alien_ingot.png",
 	description = S("Alien Ingot"),
@@ -141,3 +141,27 @@ minetest.register_node("alien_material:alien_post_light", {
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
 	sounds = default.node_sound_wood_defaults(),
 })
+
+-- X Bows
+if minetest.get_modpath("x_bows") then
+	XBows:register_arrow('arrow_alien', {
+		description = S('Arrow Alien'),
+		short_description = S('Arrow Alien'),
+		inventory_image = 'x_bows_arrow_alien.png',
+		custom = {
+			mod_name = 'alien_material',
+			recipe = {
+				{ 'default:flint' },
+				{ 'alien_material:alien_diamond' },
+				{ 'group:wool' },
+			},
+			tool_capabilities = {
+				full_punch_interval = 0.3,
+				max_drop_level = 1,
+				damage_groups = { fleshy = 30 },
+			},
+		}
+	})
+
+	XBows:update_bow_allowed_ammunition('bow_wood', {'alien_material:arrow_alien'})
+end
