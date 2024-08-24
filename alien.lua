@@ -68,8 +68,9 @@ mobs:register_mob("alien_material:alien", {
 	fall_speed = -6,
 	stepheight = 2.1,
 	drops = {
-		{name = "alien_material:alien_apple", chance = 3, min = 10, max = 20},
+		{name = "alien_material:alien_apple", chance = 1, min = 10, max = 20},
 		{name = "alien_material:alien_mese", chance = 1, min = 30, max = 50},
+		{name = "alien_material:alien_diamond", chance = 1, min = 30, max = 50},
 	},
 	water_damage = 1,
 	lava_damage = 1,
