@@ -52,10 +52,10 @@ end
 
 if minetest.get_modpath("dungeon_loot") then
 	dungeon_loot.register({
-		{name = "alien_material:alien_pickaxe", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_axe", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_spade", chance = 7, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_sword", chance = 5, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_spade", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_sword", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_post_light", chance = 5, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_bread", chance = 10, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, y = {-31000, 31000}},
@@ -63,27 +63,27 @@ if minetest.get_modpath("dungeon_loot") then
 
 	if minetest.get_modpath("x_bows") then
 		dungeon_loot.register({
-			{name = "alien_material:arrow_alien", chance = 10, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, y = {-31000, 31000}},
 		})
 	end
 
 	if minetest.get_modpath("3d_armor") then
 		dungeon_loot.register({
-			{name = "alien_material:alien_boots", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_helmet", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_leggings", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_chestplate", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_shield", chance = 5, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_leggings", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_chestplate", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_shield", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 		})
 	end
 end
 
 if minetest.get_modpath("bones_loot") then
 	bones_loot.register_loot({
-		{name = "alien_material:alien_pickaxe", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_axe", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_spade", chance = 7, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_sword", chance = 5, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_spade", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_sword", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_post_light", chance = 5, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_bread", chance = 10, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, y = {-31000, 31000}},
@@ -91,17 +91,17 @@ if minetest.get_modpath("bones_loot") then
 
 	if minetest.get_modpath("x_bows") then
 		bones_loot.register_loot({
-			{name = "alien_material:arrow_alien", chance = 10, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, y = {-31000, 31000}},
 		})
 	end
 
 	if minetest.get_modpath("3d_armor") then
 		bones_loot.register_loot({
-			{name = "alien_material:alien_boots", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_helmet", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_leggings", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_chestplate", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_shield", chance = 5, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_leggings", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_chestplate", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_shield", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 		})
 	end
 end
@@ -109,7 +109,7 @@ end
 if minetest.get_modpath("handle_schematics") then
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_pickaxe",
-		5,
+		1,
 		1,
 		1,
 		chest_default = 1,
@@ -134,7 +134,7 @@ if minetest.get_modpath("handle_schematics") then
 
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_axe",
-		5,
+		1,
 		1,
 		1,
 		chest_default = 1,
@@ -159,7 +159,7 @@ if minetest.get_modpath("handle_schematics") then
 
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_spade",
-		7,
+		1,
 		1,
 		1,
 		chest_default = 1,
@@ -184,7 +184,7 @@ if minetest.get_modpath("handle_schematics") then
 
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_sword",
-		5,
+		1,
 		1,
 		1,
 		chest_default = 1,
@@ -285,7 +285,7 @@ if minetest.get_modpath("handle_schematics") then
 	if minetest.get_modpath("x_bows") then
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:arrow_alien",
-			10,
+			5,
 			1,
 			1,
 			chest_default = 1,
@@ -312,7 +312,7 @@ if minetest.get_modpath("handle_schematics") then
 	if minetest.get_modpath("3d_armor") then
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:alien_boots",
-			5,
+			1,
 			1,
 			1,
 			chest_default = 1,
@@ -337,7 +337,7 @@ if minetest.get_modpath("handle_schematics") then
 
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:alien_helmet",
-			5,
+			1,
 			1,
 			1,
 			chest_default = 1,
@@ -362,7 +362,7 @@ if minetest.get_modpath("handle_schematics") then
 
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:alien_leggings",
-			5,
+			1,
 			1,
 			1,
 			chest_default = 1,
@@ -387,7 +387,7 @@ if minetest.get_modpath("handle_schematics") then
 
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:alien_chestplate",
-			5,
+			1,
 			1,
 			1,
 			chest_default = 1,
@@ -412,7 +412,7 @@ if minetest.get_modpath("handle_schematics") then
 
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:alien_shield",
-			5,
+			1,
 			1,
 			1,
 			chest_default = 1,
