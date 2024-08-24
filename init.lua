@@ -31,9 +31,13 @@ dofile(minetest.get_modpath("alien_material") .. "/ores.lua")
 dofile(minetest.get_modpath("alien_material") .. "/tools.lua")
 dofile(minetest.get_modpath("alien_material") .. "/items.lua")
 dofile(minetest.get_modpath("alien_material") .. "/crafting.lua")
+
 if minetest.get_modpath("3d_armor") then
 	dofile(minetest.get_modpath("alien_material") .. "/armor.lua")
 end
+
+dofile(minetest.get_modpath("alien_material") .. "/gifts.lua")
+
 if minetest.get_modpath("mobs") then
 	dofile(minetest.get_modpath("alien_material") .. "/alien.lua")
 end
