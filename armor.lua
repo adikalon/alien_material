@@ -30,8 +30,8 @@ armor:register_armor("alien_material:alien_boots", {
 		physics_jump= 0.8, physics_speed=1.5, physics_gravity=0},
 	armor_groups = {fleshy=6, radiation=16384},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
-	texture = 'armor_boots_alien.png',
-	preview = 'armor_boots_alien_preview.png',
+	texture = "armor_boots_alien.png",
+	preview = "armor_boots_alien_preview.png",
 })
 
 
@@ -44,8 +44,8 @@ armor:register_armor("alien_material:alien_helmet", {
 	groups = {armor_head=5, armor_heal=6.5, armor_use=50},
 	armor_groups = {fleshy=6.5, radiation=16384},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
-	texture = 'armor_helmet_alien.png',
-	preview = 'armor_helmet_alien_preview.png',
+	texture = "armor_helmet_alien.png",
+	preview = "armor_helmet_alien_preview.png",
 })
 
 
@@ -58,8 +58,8 @@ armor:register_armor("alien_material:alien_leggings", {
 	groups = {armor_legs=7, armor_heal=12.5, armor_use=50},
 	armor_groups = {fleshy=12.5, radiation=8192},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
-	texture = 'armor_leggings_alien.png',
-	preview = 'armor_leggings_alien_preview.png',
+	texture = "armor_leggings_alien.png",
+	preview = "armor_leggings_alien_preview.png",
 })
 
 
@@ -72,8 +72,8 @@ armor:register_armor("alien_material:alien_chestplate", {
 	groups = {armor_torso=8, armor_heal=14.5, armor_use=50},
 	armor_groups = {fleshy=14.5, radiation=8192},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
-	texture = 'armor_chestplate_alien.png',
-	preview = 'armor_chestplate_alien_preview.png',
+	texture = "armor_chestplate_alien.png",
+	preview = "armor_chestplate_alien_preview.png",
 })
 
 
@@ -86,6 +86,6 @@ armor:register_armor("alien_material:alien_shield", {
 	groups = {armor_shield=7, armor_heal=12.5, armor_use=50},
 	armor_groups = {fleshy=12.5, radiation=16384},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
-	texture = 'armor_shield_alien.png',
-	preview = 'armor_shield_alien_preview.png',
+	texture = "armor_shield_alien.png",
+	preview = "armor_shield_alien_preview.png",
 })

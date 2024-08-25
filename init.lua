@@ -18,30 +18,55 @@
 
 ]]--
 
+local path = minetest.get_modpath(minetest.get_current_modname())
+
 alien_material = {}
 
 alien_material.version = "1.0"
 alien_material.protocol_version = 11 -- Version as number
 alien_material.status = "Pre" -- Pre aren't stable Version and Main are the main versions
 
+alien_material.custom_spawn = false
+local input = io.open(path .. "/spawn.lua", "r")
+
+if input then
+	alien_material.custom_spawn = true
+	input:close()
+	input = nil
+end
+
+alien_material.mods_enabled = {
+	mobs = minetest.get_modpath("mobs"),
+	nether = minetest.get_modpath("nether"),
+	farming = minetest.get_modpath("farming"),
+	mobs_npc = minetest.get_modpath("mobs_npc"),
+	x_bows = minetest.get_modpath("x_bows"),
+	armor_3d = minetest.get_modpath("3d_armor"),
+	lootchests_default = minetest.get_modpath("lootchests_default"),
+	dungeon_loot = minetest.get_modpath("dungeon_loot"),
+	bones_loot = minetest.get_modpath("bones_loot"),
+	handle_schematics = minetest.get_modpath("handle_schematics"),
+	toolranks = minetest.get_modpath("toolranks"),
+}
+
 alien_material.S = minetest.get_translator("alien_material")
 
 -- dofile
-dofile(minetest.get_modpath("alien_material") .. "/ores.lua")
-dofile(minetest.get_modpath("alien_material") .. "/tools.lua")
-dofile(minetest.get_modpath("alien_material") .. "/items.lua")
-dofile(minetest.get_modpath("alien_material") .. "/crafting.lua")
+dofile(path .. "/ores.lua")
+dofile(path .. "/tools.lua")
+dofile(path .. "/items.lua")
+dofile(path .. "/crafting.lua")
 
-if minetest.get_modpath("3d_armor") then
-	dofile(minetest.get_modpath("alien_material") .. "/armor.lua")
+if alien_material.mods_enabled.armor_3d then
+	dofile(path .. "/armor.lua")
 end
 
-dofile(minetest.get_modpath("alien_material") .. "/gifts.lua")
+dofile(path .. "/gifts.lua")
 
-if minetest.get_modpath("mobs") then
-	dofile(minetest.get_modpath("alien_material") .. "/alien.lua")
+if alien_material.mods_enabled.mobs then
+	dofile(path .. "/alien.lua")
 end
 
--- local S = alien_material.S
-
--- minetest.register_privilege("alien", "Needed for special Things in Alien Material!")
+if alien_material.custom_spawn then
+	dofile(path .. "/spawn.lua")
+end

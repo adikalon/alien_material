@@ -143,17 +143,17 @@ minetest.register_node("alien_material:alien_post_light", {
 })
 
 -- X Bows
-if minetest.get_modpath("x_bows") then
-	XBows:register_arrow('arrow_alien', {
-		description = S('Arrow Alien'),
-		short_description = S('Arrow Alien'),
-		inventory_image = 'x_bows_arrow_alien.png',
+if alien_material.mods_enabled.x_bows then
+	XBows:register_arrow("arrow_alien", {
+		description = S("Arrow Alien"),
+		short_description = S("Arrow Alien"),
+		inventory_image = "x_bows_arrow_alien.png",
 		custom = {
-			mod_name = 'alien_material',
+			mod_name = "alien_material",
 			recipe = {
-				{ 'default:flint' },
-				{ 'alien_material:alien_diamond' },
-				{ 'group:wool' },
+				{ "default:flint" },
+				{ "alien_material:alien_diamond" },
+				{ "group:wool" },
 			},
 			tool_capabilities = {
 				full_punch_interval = 0.3,
@@ -163,10 +163,10 @@ if minetest.get_modpath("x_bows") then
 		}
 	})
 
-	XBows:update_bow_allowed_ammunition('bow_wood', {'alien_material:arrow_alien'})
+	XBows:update_bow_allowed_ammunition("bow_wood", {"alien_material:arrow_alien"})
 end
 
-if minetest.get_modpath("toolranks") then
+if alien_material.mods_enabled.toolranks then
 	minetest.override_item("alien_material:alien_sword", {
 		description = toolranks.create_description(S("Alien Sword"), 0, 1),
 		original_description = S("Alien Sword"),

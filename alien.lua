@@ -25,7 +25,7 @@ local S = alien_material.S
 local min_spawn = -31000
 local max_spawn = -4000
 
-if minetest.get_modpath("nether") then
+if alien_material.mods_enabled.nether then
 	min_spawn = nether.DEPTH_CEILING
 
 	if max_spawn < min_spawn then
@@ -89,7 +89,7 @@ mobs:register_mob("alien_material:alien", {
 	},
 })
 
-if not mobs.custom_spawn_monster then
+if not alien_material.custom_spawn then
 	mobs:spawn({
 		name = "alien_material:alien",
 		nodes = {"group:cracky", "group:crumbly"},

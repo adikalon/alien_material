@@ -32,7 +32,7 @@ minetest.register_craft({
 	}
 })
 
-if minetest.get_modpath("farming") then
+if alien_material.mods_enabled.farming then
 	minetest.register_craft({
 		type = "shaped",
 		output = "alien_material:alien_bread 8",

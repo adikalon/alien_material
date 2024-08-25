@@ -1,4 +1,4 @@
-if minetest.get_modpath("mobs_npc") then
+if alien_material.mods_enabled.mobs_npc then
 	table.insert(mobs.human.items, {"alien_material:alien_pickaxe", "default:gold_ingot 80", 10})
 	table.insert(mobs.human.items, {"alien_material:alien_axe", "default:gold_ingot 80", 10})
 	table.insert(mobs.human.items, {"alien_material:alien_spade", "default:gold_ingot 70", 10})
@@ -7,11 +7,11 @@ if minetest.get_modpath("mobs_npc") then
 	table.insert(mobs.human.items, {"alien_material:alien_bread", "default:gold_ingot 25", 10})
 	table.insert(mobs.human.items, {"alien_material:alien_apple", "default:gold_ingot 25", 10})
 
-	if minetest.get_modpath("x_bows") then
+	if alien_material.mods_enabled.x_bows then
 		table.insert(mobs.human.items, {"alien_material:arrow_alien", "default:gold_ingot 10", 10})
 	end
 
-	if minetest.get_modpath("3d_armor") then
+	if alien_material.mods_enabled.armor_3d then
 		table.insert(mobs.human.items, {"alien_material:alien_boots", "default:gold_ingot 90", 10})
 		table.insert(mobs.human.items, {"alien_material:alien_helmet", "default:gold_ingot 90", 10})
 		table.insert(mobs.human.items, {"alien_material:alien_leggings", "default:gold_ingot 90", 10})
@@ -20,7 +20,7 @@ if minetest.get_modpath("mobs_npc") then
 	end
 end
 
-if minetest.get_modpath("lootchests_default") then
+if alien_material.mods_enabled.lootchests_default then
 	local items = {
 		{"alien_material:alien_pickaxe"},
 		{"alien_material:alien_axe"},
@@ -31,11 +31,11 @@ if minetest.get_modpath("lootchests_default") then
 		{"alien_material:alien_apple"},
 	}
 
-	if minetest.get_modpath("x_bows") then
+	if alien_material.mods_enabled.x_bows then
 		table.insert(items, {"alien_material:arrow_alien"})
 	end
 
-	if minetest.get_modpath("3d_armor") then
+	if alien_material.mods_enabled.armor_3d then
 		table.insert(items, {"alien_material:alien_boots"})
 		table.insert(items, {"alien_material:alien_helmet"})
 		table.insert(items, {"alien_material:alien_leggings"})
@@ -50,7 +50,7 @@ if minetest.get_modpath("lootchests_default") then
 	lootchests.add_to_loot_table("lootchests_default:barrel", items)
 end
 
-if minetest.get_modpath("dungeon_loot") then
+if alien_material.mods_enabled.dungeon_loot then
 	dungeon_loot.register({
 		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
@@ -61,13 +61,13 @@ if minetest.get_modpath("dungeon_loot") then
 		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, y = {-31000, 31000}},
 	})
 
-	if minetest.get_modpath("x_bows") then
+	if alien_material.mods_enabled.x_bows then
 		dungeon_loot.register({
 			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, y = {-31000, 31000}},
 		})
 	end
 
-	if minetest.get_modpath("3d_armor") then
+	if alien_material.mods_enabled.armor_3d then
 		dungeon_loot.register({
 			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, y = {-31000, 31000}},
 			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, y = {-31000, 31000}},
@@ -78,35 +78,35 @@ if minetest.get_modpath("dungeon_loot") then
 	end
 end
 
-if minetest.get_modpath("bones_loot") then
+if alien_material.mods_enabled.bones_loot then
 	bones_loot.register_loot({
-		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_spade", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_sword", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_post_light", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_bread", chance = 10, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_spade", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_sword", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_post_light", chance = 5, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_bread", chance = 10, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, types = {"underworld_warrior"}},
 	})
 
-	if minetest.get_modpath("x_bows") then
+	if alien_material.mods_enabled.x_bows then
 		bones_loot.register_loot({
-			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, types = {"underworld_warrior"}},
 		})
 	end
 
-	if minetest.get_modpath("3d_armor") then
+	if alien_material.mods_enabled.armor_3d then
 		bones_loot.register_loot({
-			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_leggings", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_chestplate", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_shield", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_leggings", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_chestplate", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_shield", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
 		})
 	end
 end
 
-if minetest.get_modpath("handle_schematics") then
+if alien_material.mods_enabled.handle_schematics then
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_pickaxe",
 		1,
@@ -282,7 +282,7 @@ if minetest.get_modpath("handle_schematics") then
 		shelf = 1,
 	})
 
-	if minetest.get_modpath("x_bows") then
+	if alien_material.mods_enabled.x_bows then
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:arrow_alien",
 			5,
@@ -309,7 +309,7 @@ if minetest.get_modpath("handle_schematics") then
 		})
 	end
 
-	if minetest.get_modpath("3d_armor") then
+	if alien_material.mods_enabled.armor_3d then
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:alien_boots",
 			1,
