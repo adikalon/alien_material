@@ -21,7 +21,7 @@
 ]]--
 
 minetest.register_tool("alien_material:alien_pickaxe", {
-	description = "Alien Pickaxe",
+	description = alien_material.S("Alien Pickaxe"),
 	inventory_image = "alien_pickaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -40,7 +40,7 @@ minetest.register_tool("alien_material:alien_pickaxe", {
 })
 
 minetest.register_tool("alien_material:alien_axe", {
-	description = "Alien Axe",
+	description = alien_material.S("Alien Axe"),
 	inventory_image = "alien_axe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
@@ -59,7 +59,7 @@ minetest.register_tool("alien_material:alien_axe", {
 })
 
 minetest.register_tool("alien_material:alien_spade", {
-	description = "Alien Spade",
+	description = alien_material.S("Alien Spade"),
 	inventory_image = "alien_spade.png",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
@@ -77,12 +77,8 @@ minetest.register_tool("alien_material:alien_spade", {
 	},
 })
 
-
-
-
-
 minetest.register_tool("alien_material:alien_sword", {
-	description = "Alien Sword",
+	description = alien_material.S("Alien Sword"),
 	inventory_image = "alien_sword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.3,

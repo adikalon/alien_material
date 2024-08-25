@@ -20,10 +20,8 @@
 	Armor
 ]]--
 
-local S = alien_material.S
-
 armor:register_armor("alien_material:alien_boots", {
-	description = S("Alien Boots"),
+	description = alien_material.S("Alien Boots"),
 	inventory_image = "armor_inv_boots_alien.png",
 	groups = {armor_fire=4, armor_feet=4,
 		armor_heal=6, armor_use=50,
@@ -34,12 +32,8 @@ armor:register_armor("alien_material:alien_boots", {
 	preview = "armor_boots_alien_preview.png",
 })
 
-
-
-
-
 armor:register_armor("alien_material:alien_helmet", {
-	description = S("Alien Helmet"),
+	description = alien_material.S("Alien Helmet"),
 	inventory_image = "armor_inv_helmet_alien.png",
 	groups = {armor_head=5, armor_heal=6.5, armor_use=50},
 	armor_groups = {fleshy=6.5, radiation=16384},
@@ -48,12 +42,8 @@ armor:register_armor("alien_material:alien_helmet", {
 	preview = "armor_helmet_alien_preview.png",
 })
 
-
-
-
-
 armor:register_armor("alien_material:alien_leggings", {
-	description = S("Alien Leggings"),
+	description = alien_material.S("Alien Leggings"),
 	inventory_image = "armor_inv_leggings_alien.png",
 	groups = {armor_legs=7, armor_heal=12.5, armor_use=50},
 	armor_groups = {fleshy=12.5, radiation=8192},
@@ -62,12 +52,8 @@ armor:register_armor("alien_material:alien_leggings", {
 	preview = "armor_leggings_alien_preview.png",
 })
 
-
-
-
-
 armor:register_armor("alien_material:alien_chestplate", {
-	description = S("Alien Chestplate"),
+	description = alien_material.S("Alien Chestplate"),
 	inventory_image = "armor_inv_chestplate_alien.png",
 	groups = {armor_torso=8, armor_heal=14.5, armor_use=50},
 	armor_groups = {fleshy=14.5, radiation=8192},
@@ -76,12 +62,8 @@ armor:register_armor("alien_material:alien_chestplate", {
 	preview = "armor_chestplate_alien_preview.png",
 })
 
-
-
-
-
 armor:register_armor("alien_material:alien_shield", {
-	description = S("Alien Shield"),
+	description = alien_material.S("Alien Shield"),
 	inventory_image = "armor_inv_shield_alien.png",
 	groups = {armor_shield=7, armor_heal=12.5, armor_use=50},
 	armor_groups = {fleshy=12.5, radiation=16384},

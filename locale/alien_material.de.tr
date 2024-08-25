@@ -1,12 +1,12 @@
 # textdomain: alien_material
+
 Alien=Außerirdischer
-Alien apple=Alienapfel
-Alienbench=Alienbank
 Alien Boots=Alienstiefel
 Alien Helmet=Alienhelm
 Alien Leggings=Alienbeinlinge
 Alien Chestplate=Alienbrustpanzer
 Alien Shield=Alienschild
+Alien Apple=Alienapfel
 Alien Bread=Alienbrot
 Alien Diamond Block=Aliendiamantblock
 Alien Diamond Ore=Aliendiamanterz
@@ -18,14 +18,8 @@ Alien Mese fragments=Alienmesescherben
 Alien Ingot=Alienbarren
 Alien Block=Alienblock
 Alien Post Light=Alienstandlampe
-Alien Sand=Aliensand
-Alien Brick (Type 1)=Alienziegel (Variante 1)
-Alien Brick (Type 2)=Alienziegel (Variante 2)
-Alien Brick Stair (Type 1)=Alienziegeltreppe (Variante 1)
-Alien Brick Slab (Type 1)=Alienziegelplatte (Variante 1)
-Inner Alien Brick Stair (Type 1)=Innere Alienziegeltreppe (Variante 1)
-Outer Alien Brick Stair (Type 1)=Äußere Alienziegeltreppe (Variante 1)
-Alien Brick Stair (Type 2)=Alienziegeltreppe (Variante 2)
-Alien Brick Slab (Type 2)=Alienziegelplatte (Variante 2)
-Inner Alien Brick Stair (Type 2)=Innere Alienziegeltreppe (Variante 2)
-Outer Alien Brick Stair (Type 2)=Äußere Alienziegeltreppe (Variante 2)
+Arrow Alien=Außerirdischer Pfeil
+Alien Sword=Außerirdisches Schwert
+Alien Pickaxe=Außerirdische Spitzhacke
+Alien Axe=Alien-Axt
+Alien Spade=Außerirdischer Spaten

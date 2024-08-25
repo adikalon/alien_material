@@ -20,8 +20,6 @@
 	Aliens
 ]]--
 
-local S = alien_material.S
-
 local min_spawn = -31000
 local max_spawn = -4000
 
@@ -37,7 +35,7 @@ end
 -- Thanks for Mese Monster by Zeg9
 
 mobs:register_mob("alien_material:alien", {
-	nametag = S("Alien"),
+	nametag = alien_material.S("Alien"),
 	type = "monster",
 	passive = false,
 	damage = 1024,
@@ -100,7 +98,7 @@ if not alien_material.custom_spawn then
 	})
 end
 
-mobs:register_egg("alien_material:alien", S("Alien"), "alien_mese_block.png", 1)
+mobs:register_egg("alien_material:alien", alien_material.S("Alien"), "alien_mese_block.png", 1)
 
 -- Alien mese arrow (weapon)
 mobs:register_arrow("alien_material:alien_mese_arrow", {

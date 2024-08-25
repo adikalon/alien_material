@@ -20,19 +20,17 @@
 	Items
 ]]--
 
-local S = alien_material.S
-
 -- Food
-minetest.register_craftitem("alien_material:alien_bread", {
-	inventory_image = "alien_bread.png",
-	description = S("Alien Bread"),
+minetest.register_craftitem("alien_material:alien_apple", {
+	inventory_image = "alien_apple.png",
+	description = alien_material.S("Alien Apple"),
 	on_use = minetest.item_eat(20),
 	groups = {food = 20, eatable=20},
 })
 
-minetest.register_craftitem("alien_material:alien_apple", {
-	inventory_image = "alien_apple.png",
-	description = S("Alien apple"),
+minetest.register_craftitem("alien_material:alien_bread", {
+	inventory_image = "alien_bread.png",
+	description = alien_material.S("Alien Bread"),
 	on_use = minetest.item_eat(20),
 	groups = {food = 20, eatable=20},
 })
@@ -45,7 +43,7 @@ minetest.register_node("alien_material:alien_diamond_block", {
 	},
 	groups = {cracky = 1},
 	drop = "alien_material:alien_diamond_block",
-	description = S("Alien Diamond Block"),
+	description = alien_material.S("Alien Diamond Block"),
 	light_source = default.LIGHT_MAX,
 	sounds = default.node_sound_stone_defaults(),
 })
@@ -56,7 +54,7 @@ minetest.register_node("alien_material:alien_diamond_ore", {
 	},
 	groups = {cracky = 1},
 	drop = "alien_material:alien_diamond",
-	description = S("Alien Diamond Ore"),
+	description = alien_material.S("Alien Diamond Ore"),
 	is_ground_content = true,
 	legacy_mineral = true,
 	sounds = default.node_sound_stone_defaults(),
@@ -64,14 +62,14 @@ minetest.register_node("alien_material:alien_diamond_ore", {
 
 minetest.register_craftitem("alien_material:alien_diamond", {
 	inventory_image = "alien_diamond.png",
-	description = S("Alien Diamond"),
+	description = alien_material.S("Alien Diamond"),
 })
 
 
 
 -- Alien Mese
 minetest.register_node("alien_material:alien_mese_ore", {
-	description = S("Alien Mese Ore"),
+	description = alien_material.S("Alien Mese Ore"),
 	tiles = {"default_stone.png^alien_mese_ore.png"},
 	groups = {cracky = 1},
 	is_ground_content = true,
@@ -88,26 +86,26 @@ minetest.register_node("alien_material:alien_mese_block", {
 	is_ground_content = true,
 	legacy_mineral = true,
 	drop = "alien_material:alien_mese_block",
-	description = S("Alien Mese Block"),
+	description = alien_material.S("Alien Mese Block"),
 	light_source = default.LIGHT_MAX/2,
 	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_craftitem("alien_material:alien_mese", {
 	inventory_image = "alien_mese.png",
-	description = S("Alien Mese"),
+	description = alien_material.S("Alien Mese"),
 })
 
 minetest.register_craftitem("alien_material:alien_mese_fragment", {
 	inventory_image = "alien_mese_fragment.png",
-	description = S("Alien Mese fragments"),
+	description = alien_material.S("Alien Mese fragments"),
 })
 
 
 -- Alien Ore
 minetest.register_craftitem("alien_material:alien_ingot", {
 	inventory_image = "alien_ingot.png",
-	description = S("Alien Ingot"),
+	description = alien_material.S("Alien Ingot"),
 })
 
 minetest.register_node("alien_material:alien_block", {
@@ -116,13 +114,13 @@ minetest.register_node("alien_material:alien_block", {
 	},
 	groups = {cracky = 1},
 	drop = "alien_material:alien_block",
-	description = S("Alien Block"),
+	description = alien_material.S("Alien Block"),
 	light_source = default.LIGHT_MAX,
 	sounds = default.node_sound_metal_defaults(),
 })
 
 minetest.register_node("alien_material:alien_post_light", {
-	description = S("Alien Post Light"),
+	description = alien_material.S("Alien Post Light"),
 	tiles = {"default_fence_wood.png", "default_fence_wood.png",
 		"alien_post_light_side.png", "alien_post_light_side.png",
 		"alien_post_light_side.png", "alien_post_light_side.png"},
@@ -145,8 +143,8 @@ minetest.register_node("alien_material:alien_post_light", {
 -- X Bows
 if alien_material.mods_enabled.x_bows then
 	XBows:register_arrow("arrow_alien", {
-		description = S("Arrow Alien"),
-		short_description = S("Arrow Alien"),
+		description = alien_material.S("Arrow Alien"),
+		short_description = alien_material.S("Arrow Alien"),
 		inventory_image = "x_bows_arrow_alien.png",
 		custom = {
 			mod_name = "alien_material",
@@ -168,26 +166,26 @@ end
 
 if alien_material.mods_enabled.toolranks then
 	minetest.override_item("alien_material:alien_sword", {
-		description = toolranks.create_description(S("Alien Sword"), 0, 1),
-		original_description = S("Alien Sword"),
+		description = toolranks.create_description(alien_material.S("Alien Sword"), 0, 1),
+		original_description = alien_material.S("Alien Sword"),
 		after_use = toolranks.new_afteruse
 	})
 
 	minetest.override_item("alien_material:alien_pickaxe", {
-		description = toolranks.create_description(S("Alien Pickaxe"), 0, 1),
-		original_description = S("Alien Pickaxe"),
+		description = toolranks.create_description(alien_material.S("Alien Pickaxe"), 0, 1),
+		original_description = alien_material.S("Alien Pickaxe"),
 		after_use = toolranks.new_afteruse
 	})
 
 	minetest.override_item("alien_material:alien_axe", {
-		description = toolranks.create_description(S("Alien Axe"), 0, 1),
-		original_description = S("Alien Axe"),
+		description = toolranks.create_description(alien_material.S("Alien Axe"), 0, 1),
+		original_description = alien_material.S("Alien Axe"),
 		after_use = toolranks.new_afteruse
 	})
 
 	minetest.override_item("alien_material:alien_spade", {
-		description = toolranks.create_description(S("Alien Spade"), 0, 1),
-		original_description = S("Alien Spade"),
+		description = toolranks.create_description(alien_material.S("Alien Spade"), 0, 1),
+		original_description = alien_material.S("Alien Spade"),
 		after_use = toolranks.new_afteruse
 	})
 end
