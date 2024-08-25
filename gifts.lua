@@ -52,56 +52,56 @@ end
 
 if alien_material.mods_enabled.dungeon_loot then
 	dungeon_loot.register({
-		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_spade", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_sword", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_post_light", chance = 5, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_bread", chance = 10, count = {1, 1}, y = {-31000, 31000}},
-		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_pickaxe", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_axe", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_spade", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_sword", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_post_light", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_bread", chance = 0.3, count = {1, 1}, y = {-31000, 31000}},
+		{name = "alien_material:alien_apple", chance = 0.3, count = {1, 1}, y = {-31000, 31000}},
 	})
 
 	if alien_material.mods_enabled.x_bows then
 		dungeon_loot.register({
-			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:arrow_alien", chance = 0.3, count = {1, 3}, y = {-31000, 31000}},
 		})
 	end
 
 	if alien_material.mods_enabled.armor_3d then
 		dungeon_loot.register({
-			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_leggings", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_chestplate", chance = 1, count = {1, 1}, y = {-31000, 31000}},
-			{name = "alien_material:alien_shield", chance = 1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_boots", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_helmet", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_leggings", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_chestplate", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
+			{name = "alien_material:alien_shield", chance = 0.1, count = {1, 1}, y = {-31000, 31000}},
 		})
 	end
 end
 
 if alien_material.mods_enabled.bones_loot then
 	bones_loot.register_loot({
-		{name = "alien_material:alien_pickaxe", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-		{name = "alien_material:alien_axe", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-		{name = "alien_material:alien_spade", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-		{name = "alien_material:alien_sword", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-		{name = "alien_material:alien_post_light", chance = 5, count = {1, 1}, types = {"underworld_warrior"}},
-		{name = "alien_material:alien_bread", chance = 10, count = {1, 1}, types = {"underworld_warrior"}},
-		{name = "alien_material:alien_apple", chance = 10, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_pickaxe", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_axe", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_spade", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_sword", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_post_light", chance = 0.3, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_bread", chance = 0.3, count = {1, 1}, types = {"underworld_warrior"}},
+		{name = "alien_material:alien_apple", chance = 0.3, count = {1, 1}, types = {"underworld_warrior"}},
 	})
 
 	if alien_material.mods_enabled.x_bows then
 		bones_loot.register_loot({
-			{name = "alien_material:arrow_alien", chance = 5, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:arrow_alien", chance = 0.3, count = {1, 3}, types = {"underworld_warrior"}},
 		})
 	end
 
 	if alien_material.mods_enabled.armor_3d then
 		bones_loot.register_loot({
-			{name = "alien_material:alien_boots", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-			{name = "alien_material:alien_helmet", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-			{name = "alien_material:alien_leggings", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-			{name = "alien_material:alien_chestplate", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
-			{name = "alien_material:alien_shield", chance = 1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_boots", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_helmet", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_leggings", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_chestplate", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
+			{name = "alien_material:alien_shield", chance = 0.1, count = {1, 1}, types = {"underworld_warrior"}},
 		})
 	end
 end
@@ -209,7 +209,7 @@ if alien_material.mods_enabled.handle_schematics then
 
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_post_light",
-		5,
+		2,
 		1,
 		1,
 		chest_default = 1,
@@ -234,7 +234,7 @@ if alien_material.mods_enabled.handle_schematics then
 
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_bread",
-		10,
+		5,
 		1,
 		1,
 		chest_default = 1,
@@ -259,7 +259,7 @@ if alien_material.mods_enabled.handle_schematics then
 
 	table.insert(handle_schematics.random_chest_content, {
 		"alien_material:alien_apple",
-		10,
+		5,
 		1,
 		1,
 		chest_default = 1,
@@ -285,8 +285,8 @@ if alien_material.mods_enabled.handle_schematics then
 	if alien_material.mods_enabled.x_bows then
 		table.insert(handle_schematics.random_chest_content, {
 			"alien_material:arrow_alien",
-			5,
 			1,
+			3,
 			1,
 			chest_default = 1,
 			farm_tiny = 1,
