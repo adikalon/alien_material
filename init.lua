@@ -49,7 +49,7 @@ alien_material.mods_enabled = {
 	toolranks = minetest.get_modpath("toolranks"),
 }
 
-alien_material.S = minetest.get_translator("alien_material")
+alien_material.S = minetest.get_translator(minetest.get_current_modname())
 
 -- dofile
 dofile(path .. "/ores.lua")
