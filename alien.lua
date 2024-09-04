@@ -21,7 +21,7 @@
 ]]--
 
 local min_spawn = -31000
-local max_spawn = -4000
+local max_spawn = -5000
 
 if alien_material.mods_enabled.nether then
 	min_spawn = nether.DEPTH_CEILING
@@ -68,7 +68,8 @@ mobs:register_mob("alien_material:alien", {
 	drops = {
 		{name = "alien_material:alien_apple", chance = 1, min = 10, max = 20},
 		{name = "alien_material:alien_mese", chance = 1, min = 30, max = 50},
-		{name = "alien_material:alien_diamond", chance = 1, min = 30, max = 50},
+		{name = "alien_material:alien_mese_block", chance = 1, min = 5, max = 10},
+		{name = "alien_material:alien_diamond_block", chance = 1, min = 5, max = 10},
 	},
 	water_damage = 1,
 	lava_damage = 1,
