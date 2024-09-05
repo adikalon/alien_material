@@ -23,7 +23,7 @@
 armor:register_armor("alien_material:alien_boots", {
 	description = alien_material.S("Alien Boots"),
 	inventory_image = "armor_inv_boots_alien.png",
-	groups = {armor_fire=4, armor_feet=4,
+	groups = {armor_fire=4, armor_feet=1,
 		armor_heal=6, armor_use=50,
 		physics_jump= 0.8, physics_speed=1.5, physics_gravity=0},
 	armor_groups = {fleshy=6, radiation=16384},
@@ -35,7 +35,7 @@ armor:register_armor("alien_material:alien_boots", {
 armor:register_armor("alien_material:alien_helmet", {
 	description = alien_material.S("Alien Helmet"),
 	inventory_image = "armor_inv_helmet_alien.png",
-	groups = {armor_head=5, armor_heal=6.5, armor_use=50},
+	groups = {armor_head=1, armor_heal=6.5, armor_use=50},
 	armor_groups = {fleshy=6.5, radiation=16384},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
 	texture = "armor_helmet_alien.png",
@@ -45,7 +45,7 @@ armor:register_armor("alien_material:alien_helmet", {
 armor:register_armor("alien_material:alien_leggings", {
 	description = alien_material.S("Alien Leggings"),
 	inventory_image = "armor_inv_leggings_alien.png",
-	groups = {armor_legs=7, armor_heal=12.5, armor_use=50},
+	groups = {armor_legs=1, armor_heal=12.5, armor_use=50},
 	armor_groups = {fleshy=12.5, radiation=8192},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
 	texture = "armor_leggings_alien.png",
@@ -55,7 +55,7 @@ armor:register_armor("alien_material:alien_leggings", {
 armor:register_armor("alien_material:alien_chestplate", {
 	description = alien_material.S("Alien Chestplate"),
 	inventory_image = "armor_inv_chestplate_alien.png",
-	groups = {armor_torso=8, armor_heal=14.5, armor_use=50},
+	groups = {armor_torso=1, armor_heal=14.5, armor_use=50},
 	armor_groups = {fleshy=14.5, radiation=8192},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
 	texture = "armor_chestplate_alien.png",
@@ -65,7 +65,7 @@ armor:register_armor("alien_material:alien_chestplate", {
 armor:register_armor("alien_material:alien_shield", {
 	description = alien_material.S("Alien Shield"),
 	inventory_image = "armor_inv_shield_alien.png",
-	groups = {armor_shield=7, armor_heal=12.5, armor_use=50},
+	groups = {armor_shield=1, armor_heal=12.5, armor_use=50},
 	armor_groups = {fleshy=12.5, radiation=16384},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
 	texture = "armor_shield_alien.png",
