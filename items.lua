@@ -166,25 +166,25 @@ end
 
 if alien_material.mods_enabled.toolranks then
 	minetest.override_item("alien_material:alien_sword", {
-		description = toolranks.create_description(alien_material.S("Alien Sword"), 0, 1),
+		description = toolranks.create_description(alien_material.S("Alien Sword"), 0, 0),
 		original_description = alien_material.S("Alien Sword"),
 		after_use = toolranks.new_afteruse
 	})
 
 	minetest.override_item("alien_material:alien_pickaxe", {
-		description = toolranks.create_description(alien_material.S("Alien Pickaxe"), 0, 1),
+		description = toolranks.create_description(alien_material.S("Alien Pickaxe"), 0, 0),
 		original_description = alien_material.S("Alien Pickaxe"),
 		after_use = toolranks.new_afteruse
 	})
 
 	minetest.override_item("alien_material:alien_axe", {
-		description = toolranks.create_description(alien_material.S("Alien Axe"), 0, 1),
+		description = toolranks.create_description(alien_material.S("Alien Axe"), 0, 0),
 		original_description = alien_material.S("Alien Axe"),
 		after_use = toolranks.new_afteruse
 	})
 
 	minetest.override_item("alien_material:alien_spade", {
-		description = toolranks.create_description(alien_material.S("Alien Spade"), 0, 1),
+		description = toolranks.create_description(alien_material.S("Alien Spade"), 0, 0),
 		original_description = alien_material.S("Alien Spade"),
 		after_use = toolranks.new_afteruse
 	})
