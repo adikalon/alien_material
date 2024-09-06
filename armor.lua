@@ -25,7 +25,7 @@ armor:register_armor("alien_material:alien_boots", {
 	inventory_image = "armor_inv_boots_alien.png",
 	groups = {armor_fire=4, armor_feet=1,
 		armor_heal=6, armor_use=50,
-		physics_jump= 0.8, physics_speed=1.5, physics_gravity=0},
+		physics_jump= 0.8, physics_speed=0.5, physics_gravity=0},
 	armor_groups = {fleshy=6, radiation=16},
 	damage_groups = {cracky=3, snappy=3, choppy=2, crumbly=2, level=1},
 	texture = "armor_boots_alien.png",
