@@ -1,25 +1,3 @@
-if alien_material.mods_enabled.mobs_npc then
-	table.insert(mobs.human.items, {"alien_material:alien_pickaxe", "default:gold_ingot 80", 10})
-	table.insert(mobs.human.items, {"alien_material:alien_axe", "default:gold_ingot 80", 10})
-	table.insert(mobs.human.items, {"alien_material:alien_spade", "default:gold_ingot 70", 10})
-	table.insert(mobs.human.items, {"alien_material:alien_sword", "default:gold_ingot 80", 10})
-	table.insert(mobs.human.items, {"alien_material:alien_post_light", "default:gold_ingot 80", 10})
-	table.insert(mobs.human.items, {"alien_material:alien_bread", "default:gold_ingot 25", 10})
-	table.insert(mobs.human.items, {"alien_material:alien_apple", "default:gold_ingot 25", 10})
-
-	if alien_material.mods_enabled.x_bows then
-		table.insert(mobs.human.items, {"alien_material:arrow_alien", "default:gold_ingot 10", 10})
-	end
-
-	if alien_material.mods_enabled.armor_3d then
-		table.insert(mobs.human.items, {"alien_material:alien_boots", "default:gold_ingot 90", 10})
-		table.insert(mobs.human.items, {"alien_material:alien_helmet", "default:gold_ingot 90", 10})
-		table.insert(mobs.human.items, {"alien_material:alien_leggings", "default:gold_ingot 90", 10})
-		table.insert(mobs.human.items, {"alien_material:alien_chestplate", "default:gold_ingot 90", 10})
-		table.insert(mobs.human.items, {"alien_material:alien_shield", "default:gold_ingot 90", 10})
-	end
-end
-
 if alien_material.mods_enabled.lootchests_default then
 	local items = {
 		{"alien_material:alien_pickaxe"},

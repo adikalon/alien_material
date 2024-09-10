@@ -39,7 +39,6 @@ alien_material.mods_enabled = {
 	mobs = minetest.get_modpath("mobs"),
 	nether = minetest.get_modpath("nether"),
 	farming = minetest.get_modpath("farming"),
-	mobs_npc = minetest.get_modpath("mobs_npc"),
 	x_bows = minetest.get_modpath("x_bows"),
 	armor_3d = minetest.get_modpath("3d_armor"),
 	lootchests_default = minetest.get_modpath("lootchests_default"),
